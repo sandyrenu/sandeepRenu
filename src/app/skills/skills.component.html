@@ -1,0 +1,26 @@
+
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-6" let *ngFor="let item of skillsData">
+          <div class="row">
+            <div class="col-6 my-2">
+              {{item.skill}}
+            </div>
+            <div class="col-6 text-end my-2">
+              {{item.progress}}
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" 
+            [style.width]="item.progress"
+                 min="0" 
+                 max="100">{{item.progress}}
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+       <div class="col-4" style="background-color: #00334D">
+        <div class="card-body">
+          <h5 style="color:white"> 2016 - 2020</h5>
+          <h4 style="color:white">B-Tech</h4>
+        </div>
+       </div>
+       <div class="col-8">
+         <div class="card-body " style="background-color: white">
+          <h4>Bachelour of Technology</h4>
+          <h5>NATIONAL INSTITUTE OF TECHNOLOGY DURGAPUR</h5>
+          <ul *ngFor="let item of btechData | split">
+            <li>
+               {{item}}
+            </li>
+          </ul>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-4" style="background-color: #00334D">
+         <div class="card-body">
+           <h5 style="color:white"> 2014 - 2016</h5>
+           <h4 style="color:white">Higher Secondary</h4>
+         </div>
+        </div>
+        <div class="col-8">
+          <div class="card-body " style="background-color: white">
+           <h4>Higher Secondary</h4>
+           <h5>NARAYANA COLLEGE</h5>
+           <ul *ngFor="let item of InterData | split">
+             <li>
+                {{item}}
+             </li>
+           </ul>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-4" style="background-color: #00334D">
+         <div class="card-body">
+           <h5 style="color:white"> 2008 - 2014</h5>
+           <h4 style="color:white">Secondary School</h4>
+         </div>
+        </div>
+        <div class="col-8">
+          <div class="card-body " style="background-color: white">
+           <h4>Secondary School</h4>
+           <h5>MONTESSORI ENGLISH MEDIUM HIGH SCHOOL</h5>
+           <ul *ngFor="let item of tenthData | split">
+             <li>
+                {{item}}
+             </li>
+           </ul>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>

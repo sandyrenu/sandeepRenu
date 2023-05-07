@@ -1,0 +1,51 @@
+<div class="section">
+  <div class="container">
+      <!-- <div class="h4 text-center mb-4 title">Work Experience</div> -->
+      <div class="card">
+        <div class="row">
+          <div class="col-12">
+            <div >
+              <ul *ngFor="let experienceData of experienceData">
+                <div class="row">
+                  <li style="list-style-type: none">
+                      <h3>{{experienceData.companyName}}</h3>
+                       <p>{{experienceData.duration}}</p>
+                  </li>
+                </div>
+               <h4>{{experienceData.role}}</h4>
+               <li *ngFor="let item of experienceData.workedOn | split">
+                  <p>{{item}}</p>
+               </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="colorlib-narrow-content">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="timeline-centered">
+                      <article *ngFor="let experienceData of experienceData" class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                          <div class="timeline-entry-inner">
+
+                              <div class="timeline-icon color-2">
+                                  <i class="icon-pen2"></i>
+                              </div>
+
+                              <div class="timeline-label">
+                                  <h2>{{experienceData.companyName}}<span>- &nbsp;{{experienceData.duration}}, {{experienceData.duration}}</span></h2>
+                                  <h4> {{experienceData.role}}</h4>
+                                  
+                                  <ul>
+                                    <li *ngFor="let work of experienceData.work | split">{{work}}</li>
+                                  </ul>
+
+                              </div>
+                          </div>
+                      </article>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+  </div>
+</div>
